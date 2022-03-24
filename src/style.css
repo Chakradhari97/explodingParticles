@@ -1,0 +1,40 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /*opacity: .5;
+    border: 3px solid cyan;
+    */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+
+    width: 40vh;
+    height: 68.9vh;  /* formula => 480(width)/820(height) = 0.58,  40/ 0.58 = 68.5vh */ 
+
+}
+
+.video video {
+    width: 100%
+}
